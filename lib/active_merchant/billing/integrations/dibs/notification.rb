@@ -1,5 +1,9 @@
 require 'net/http'
-
+# https://payment.architrade.com/cgi-bin/transinfo.cgi?merchant=<merchant_id>&orderid=<order_id>&currency=<currency_code>&amount=<amount>
+# Returns transact=<transaction_id>&status=<status_code> where status code is one of
+# 0 – rejected
+# 1 – authorised
+# 2 – captured.
 module ActiveMerchant #:nodoc:
   module Billing #:nodoc:
     module Integrations #:nodoc:
