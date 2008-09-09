@@ -9,6 +9,8 @@ require 'active_merchant/billing/integrations/gestpay'
 require 'active_merchant/billing/integrations/two_checkout'
 require 'active_merchant/billing/integrations/hi_trust'
 require 'active_merchant/billing/integrations/dibs'
+require 'active_merchant/billing/integrations/ogone'
+
 
 # make the bogus gateway be classified correctly by the inflector
 Inflector.inflections do |inflect|
